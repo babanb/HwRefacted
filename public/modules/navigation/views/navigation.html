@@ -17,14 +17,11 @@
   -->
 
 <div data-ng-controller="NavigationController">
-    <div class="col-lg-3" style="margin-left: 175px">
-        <h4 class="greyt ">Tags</h4>
-        <div class="leftpanal">
-            <div class="row">
-                <div class="litag" ng-repeat="nav in leftnav" style="margin-top: 10px;">
-                    <a ng-click="updateVar($event)" ui-sref="search({ query: nav })" style="color: #636364 !important;">{{nav}} </a>
-                </div>
-            </div>
+    <div class="col-lg-3">
+        <h4>Tags</h4>
+        <div class="list-group">
+            <a ng-repeat="nav in leftnav" ui-sref="search({ query: nav })" class="list-group-item">{{nav}} </a>
         </div>
+
     </div>
 </div>
