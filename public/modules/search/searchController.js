@@ -44,8 +44,8 @@ angular.module('dgc.search').controller('SearchController', ['$scope', '$locatio
             return ['hive_table'].indexOf(this.result.type && this.result.type.toLowerCase()) > -1;
         };
 
-        var urlParts = $location.url().split('?');
-        $scope.query = urlParts.length > 1 ? urlParts[1] : null;
+        var urlParts = $location.url().split('/');
+        $scope.query = urlParts.length > 1 ? urlParts[3] : null;
         if ($scope.query) {
             $scope.search($scope.query);
         }

@@ -18,4 +18,4 @@
 
 <h4><a data-ui-sref="details({id:result['$id$'].id})">{{result.name}}</a></h4>
 <p>{{result.description}}</p>
-<h5>Tags :  <a ng-repeat="(key, value) in result['$traits$']" data-ui-sref="search({query: key})">{{key}}</a> </h5>
+<h5>Tags :  <a ng-repeat="(key, value) in result['$traits$']" data-ui-sref="search.results({query: key})">{{key}}</a> </h5>
