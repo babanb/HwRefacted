@@ -38,7 +38,7 @@ var path = require('path'),
             verbose: true,
             hosts: [{
                 routes: {
-                    '/api': 'http://162.249.6.50:21000/api'
+                    '/api': 'http://162.249.6.39:21000/api'
                 }
             }]
         }

@@ -24,7 +24,7 @@ angular.module('dgc.search').factory('SearchResource', ['$resource', function($r
             'method': 'GET',
             'responseType': 'json',
             'transformResponse': function(data) {
-                return data.results;
+                return data;
             }
         }
     });
