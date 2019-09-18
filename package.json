@@ -29,7 +29,7 @@
         "express": "~4.2.0",
         "express-load": "^1.1.14",
         "forever": "~0.11.1",
-        "lodash": "~2.4.1",
+        "lodash": "^2.4.1",
         "method-override": "^1.0.0",
         "morgan": "^1.0.1",
         "path-extra": "~0.1.1",
